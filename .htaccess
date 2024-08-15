@@ -1,0 +1,26 @@
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Set cache TTL for HTML files to 1 year
+  ExpiresByType text/html "access plus 1 year"
+
+  # Set cache TTL for images to 1 year
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+
+  # Set cache TTL for stylesheets and scripts to 1 year
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+
+  # Set cache TTL for LineIcons.woff2 to 1 year
+  ExpiresByType application/font-woff2 "access plus 1 year"
+</IfModule>
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php74” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php74 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
